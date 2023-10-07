@@ -1,0 +1,24 @@
+.base .row{
+    display: flex;
+}
+
+.base .result {
+    display: flex;
+    flex-direction: column;
+}
+
+.base .result h1 {
+    margin-bottom: .8rem;
+}
+
+.base .board {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.base .board button {
+    align-self: center;
+    justify-self: center;
+}
+

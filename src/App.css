@@ -1,38 +1,61 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .game {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .game .score {
+   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App > p:nth-child(1) {
+   color: red;
+   font-size: 3.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App > p:nth-child(2) {
+   color: black;
+   margin: 0 0 3rem 9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game .score > p:nth-child(1) {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.game .score > p:nth-child(2) {
+   font-size: 1.8rem;
+   font-weight: 600;
+}
+
+.restart {
+   padding: 1rem 1rem;
+   font-size: 1.1rem;
+   background-color: red;
+   border: none;
+   border-radius: 50px;
+   color: #fff;
+   transition: all 0.2s;
+}
+
+.restart:hover {
+   background-color: rgba(255, 0, 0, 0.8);
 }
